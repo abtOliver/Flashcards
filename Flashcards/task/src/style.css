@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+*{
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+body{
+    background: center url("https://stepik.org/media/attachments/lesson/374893/world.png");
+    background-size: cover;
+}
+
+h1 {
+    background: linear-gradient(to bottom right, #48b7, #06ae, #24b);
+    font-size: 3.5vmin;
+    margin: 3vmin auto;
+    padding: 2vmin 2vmin 2vmin 3vmin;
+    width: 65vmin;
+}
+
+.quiz-area {
+    margin: 0 auto;
+    width: 95%;
+    height: 94vh;
+}
+
+.card-area {
+    align-content: space-evenly;
+    background: linear-gradient(to bottom right, #48b7, #06a7, #24b7);
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vmin;
+    justify-content: space-evenly;
+    margin: 3vmin auto;
+    width: 70vmin;
+}
+
+.card {
+    background: linear-gradient(to bottom right, #48bd, #06a, #24b);
+    height: 20vmin;
+    width: 20vmin;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card-container{
+    position: relative;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.back, .front {
+    align-items: center;
+    backface-visibility: hidden;
+    color: #ffe;
+    display: flex;
+    font-size: 2.5vmin;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
